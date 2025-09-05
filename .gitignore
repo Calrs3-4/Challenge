@@ -1,0 +1,58 @@
+# Crear .gitignore con todo lo necesario
+@'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+
+# Environment variables
+.env
+.venv
+venv/
+env/
+
+# Database
+*.db
+*.sqlite
+instance/
+
+# Logs
+logs/
+*.log
+
+# Docker
+docker-compose.yml
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+htmlcov/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependencies
+node_modules/
+
+# Virtual environment
+virtual/
+'@ | Out-File -Encoding utf8 .gitignore

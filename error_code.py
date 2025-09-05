@@ -1,0 +1,97 @@
+
+class AuthErrorCodes:
+    # Errores generales (1xxx)
+    INVALID_REQUEST_FORMAT = 1001
+    MISSING_REQUIRED_FIELDS = 1002
+    
+    # Registro (11xx)
+    USER_ALREADY_EXISTS = 1101
+    INVALID_EMAIL_FORMAT = 1102
+    WEAK_PASSWORD = 1103
+    REGISTRATION_FAILED = 1104
+    
+    # Login (12xx)
+    INVALID_CREDENTIALS = 1201
+    ACCOUNT_LOCKED = 1202
+    LOGIN_FAILED = 1203
+    INTERNAL_SERVER_ERROR = 1000
+
+    #refresh
+    REFRESH_FAILED = 1301
+
+class ProjectErrorCodes:
+    # General
+    PROJECT_NOT_FOUND = 2001
+    
+    # Creación/Actualización
+    INVALID_PROJECT_NAME = 2010
+    INVALID_PROJECT_NAME_LENGTH = 7990
+    MISSING_REQUIRED_FIELDS = 2011
+    PROJECT_CREATION_FAILED = 2030
+    
+    # Estado
+    UNFINISHED_TASKS = 2020
+    PROJECT_ALREADY_COMPLETED = 2021
+    INVALID_PROJECT_COMPLETION = "invalid_project_completion"
+
+class CollaboratorErrorCodes:
+    # Permisos
+    USER_NOT_COLLABORATOR = 3001
+    INSUFFICIENT_PERMISSIONS = 3002
+    INVALID_ROLE = 3003
+    USER_NOT_FOUND = 3004
+
+    
+    # Operaciones
+    USER_ALREADY_ADDED = 3010
+    CANNOT_REMOVE_OWNER = 3011
+
+class TaskErrorCodes:
+    # General
+    TASK_NOT_FOUND = 4001
+    DUPLICATE_TASK = 4003 
+    INVALID_TASK_DATA = 4002 
+    INVALID_TASK_DESCRIPTION = 4004 
+    # Estado
+    INVALID_STATUS_TRANSITION = 4010
+    CANNOT_COMPLETE_UNASSIGNED = 4011
+    
+    # Asignación
+    USER_CANNOT_BE_ASSIGNED = 4020
+
+class SystemErrorCodes:
+    INTERNAL_SERVER_ERROR = 9001
+    DATABASE_ERROR = 9002
+    INVALID_REQUEST_FORMAT = 2011
+
+class SuccessCodes:
+
+    SUCCESS = 2000
+
+    # Autenticación (21xx)
+    LOGIN_SUCCESS = 2101
+    REGISTER_SUCCESS = 2102
+    LOGOUT_SUCCESS = 2103
+    TOKEN_REFRESHED = 2103
+
+    # Proyectos (22xx)
+    PROJECT_CREATED = 2201        
+    PROJECT_UPDATED = 2202        
+    PROJECT_DELETED = 2203
+    PROJECT_COMPLETED = 2204 
+    PROJECT_ALREADY_COMPLETED = 2021       
+    
+    # Tareas (23xx)
+    TASK_COMPLETED = 2301         
+    TASK_ASSIGNED = 2302
+    TASK_CREATED = 2303    
+    TASK_UPDATED = 2304
+    TASK_DELETED = 2305       
+    
+    # Colaboradores (24xx)
+    MEMBER_ADDED = 2401           
+    MEMBER_REMOVED = 2402          
+
+
+
+
